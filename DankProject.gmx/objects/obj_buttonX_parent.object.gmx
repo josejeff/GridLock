@@ -68,7 +68,6 @@ id_tag = button_controller.totalX_buttons;
           <argument>
             <kind>1</kind>
             <string>///Button Select 
-show_debug_message(id_tag);
 if(button_controller.selected_buttonX == id_tag)
 {
     selected = true;
