@@ -36,19 +36,24 @@
       <objects name="Maps">
         <object>objects\obj_map_hanoi</object>
         <object>objects\obj_map_summoners_rift</object>
+        <object>objects\obj_map_parent</object>
       </objects>
       <objects name="Characters">
         <object>objects\obj_character_mike</object>
       </objects>
-      <object>objects\obj_button_controller</object>
       <object>objects\obj_one_vs_ai</object>
       <object>objects\obj_one_vs_one</object>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\obj_button_controller</object>
+      <object>objects\obj_scene_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_menu</room>
     <room>rooms\rm_character_selection</room>
     <room>rooms\rm_maps</room>
+    <room>rooms\rm_fight</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
