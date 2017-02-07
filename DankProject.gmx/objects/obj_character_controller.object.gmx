@@ -4,25 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
-  <parentName>obj_button_parent</parentName>
+  <persistent>-1</persistent>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -39,12 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Inital
-button_controller.totalX_buttons++;
-id_tag = button_controller.totalX_buttons;
-
-
-
+            <string>player_1 = -1;
+player_2 = -1;
 </string>
           </argument>
         </arguments>
@@ -67,47 +49,8 @@ id_tag = button_controller.totalX_buttons;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Button Select 
-show_debug_message(id_tag);
-if(button_controller.selected_buttonX == id_tag)
-{
-    selected = true;
-}
-else
-{
-    selected = false;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="73">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Selected Button Graphics
-if(selected)
-{
-    image_index = 1;
-}
-else
-{
-    image_index = 0;
-}
+            <string>show_debug_message(player_1);
+show_debug_message(player_2);
 </string>
           </argument>
         </arguments>
