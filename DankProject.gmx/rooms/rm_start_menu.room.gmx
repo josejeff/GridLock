@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_button_controller" x="32" y="32" name="inst_C5277873" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_one_vs_ai" x="416" y="480" name="inst_8CEAF79A" locked="0" code="" scaleX="3.65625" scaleY="3.28125" colour="4294967295" rotation="0"/>
-    <instance objName="obj_one_vs_one" x="559" y="483" name="inst_BF0D0D41" locked="0" code="" scaleX="3.53125" scaleY="3.453125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_one_vs_one" x="528" y="419" name="inst_BF0D0D41" locked="0" code="" scaleX="3.53125" scaleY="3.453125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
