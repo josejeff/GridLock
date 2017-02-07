@@ -8,7 +8,7 @@
   <parentName>obj_buttonY_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="4">
+    <event eventtype="9" enumb="13">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_character_selection)
+            <string>///Room Change
+if(selected)
+{
+    room_goto(rm_character_selection);
+}
+
 </string>
           </argument>
         </arguments>

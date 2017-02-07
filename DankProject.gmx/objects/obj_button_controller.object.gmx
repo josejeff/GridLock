@@ -52,9 +52,8 @@ selected_buttonX = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Debug Statements
-show_debug_message(selected_buttonY);
-show_debug_message(selected_buttonX);
+            <string>show_debug_message(totalX_buttons);
+show_debug_message(totalY_buttons);
 </string>
           </argument>
         </arguments>
