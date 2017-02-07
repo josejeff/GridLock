@@ -28,8 +28,11 @@
             <string>///Selected Button Graphics
 if(selected)
 {
-    draw_set_color(c_white);
-    draw_circle(x-1,y-1,sprite_width/2,1);
+    image_index = 1;
+}
+else
+{
+    image_index = 0;
 }
 </string>
           </argument>

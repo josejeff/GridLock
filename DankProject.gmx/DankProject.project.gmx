@@ -11,6 +11,8 @@
       <sprite>sprites\spr_one_vs_ai</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_map_buttons</sprite>
+      <sprite>sprites\spr_map_hanoi</sprite>
+      <sprite>sprites\spr_character_mike</sprite>
     </sprites>
     <sprites name="Background Sprites">
       <sprite>sprites\mainScreen</sprite>
@@ -26,14 +28,21 @@
   <objects name="objects">
     <objects name="Buttons">
       <objects name="Parents">
-        <object>objects\obj_map_button_parent</object>
         <object>objects\obj_buttonY_parent</object>
         <object>objects\obj_buttonX_parent</object>
+        <object>objects\obj_button_parent</object>
+        <object>objects\obj_character_parent</object>
       </objects>
-      <object>objects\obj_map_summoners_rift</object>
+      <objects name="Maps">
+        <object>objects\obj_map_hanoi</object>
+        <object>objects\obj_map_summoners_rift</object>
+      </objects>
+      <objects name="Characters">
+        <object>objects\obj_character_mike</object>
+      </objects>
+      <object>objects\obj_button_controller</object>
       <object>objects\obj_one_vs_ai</object>
       <object>objects\obj_one_vs_one</object>
-      <object>objects\obj_button_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">
