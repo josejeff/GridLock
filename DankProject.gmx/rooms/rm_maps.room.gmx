@@ -52,10 +52,10 @@
   </views>
   <instances>
     <instance objName="obj_button_controller" x="64" y="32" name="inst_F79B85A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_map_summoners_rift" x="128" y="320" name="inst_DD7613E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_map_summoners_rift" x="352" y="320" name="inst_3881221B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_map_summoners_rift" x="576" y="320" name="inst_EDD5756C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_map_summoners_rift" x="832" y="320" name="inst_30AF8136" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_map_hanoi" x="64" y="320" name="inst_13938BF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_map_summoners_rift" x="320" y="320" name="inst_AB3F4BC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_map_summoners_rift" x="576" y="320" name="inst_34490B2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_map_hanoi" x="832" y="320" name="inst_2A9C7782" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
