@@ -6,6 +6,21 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="CharacterSelectionSprites">
+      <sprite>sprites\spr_samauri_char_selection</sprite>
+      <sprite>sprites\spr_viking_char_selection</sprite>
+      <sprite>sprites\spr_robot_char_selection</sprite>
+      <sprite>sprites\spr_ninja_char_selection</sprite>
+      <sprite>sprites\spr_knight_char_selection</sprite>
+      <sprite>sprites\spr_monk_char_selection</sprite>
+    </sprites>
+    <sprites name="MapSelectionSprites">
+      <sprite>sprites\sprite13</sprite>
+      <sprite>sprites\sprite_desert_map_selection</sprite>
+      <sprite>sprites\sprite_temple_map_selection</sprite>
+      <sprite>sprites\sprite_waterfall_map_selection</sprite>
+      <sprite>sprites\sprit_castle_map_selection</sprite>
+    </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_one_vs_one</sprite>
       <sprite>sprites\spr_one_vs_ai</sprite>
@@ -16,6 +31,7 @@
     </sprites>
     <sprites name="Background Sprites">
       <sprite>sprites\mainScreen</sprite>
+      <sprite>sprites\sprite7</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -48,8 +64,13 @@
       <object>objects\obj_button_controller</object>
       <object>objects\obj_scene_controller</object>
     </objects>
+
     <objects name="Debug ">
       <object>objects\txt_info</object>
+      
+    <objects name="Extra UI objects">
+      <object>objects\obj_Character_Seclection_Pane</object>
+      <object>objects\obj_Map_Selection_Pane</object>
     </objects>
   </objects>
   <rooms name="rooms">
