@@ -32,11 +32,11 @@
         <object>objects\obj_buttonX_parent</object>
         <object>objects\obj_button_parent</object>
         <object>objects\obj_character_parent</object>
+        <object>objects\obj_map_parent</object>
       </objects>
       <objects name="Maps">
         <object>objects\obj_map_hanoi</object>
         <object>objects\obj_map_summoners_rift</object>
-        <object>objects\obj_map_parent</object>
       </objects>
       <objects name="Characters">
         <object>objects\obj_character_mike</object>
@@ -47,6 +47,9 @@
     <objects name="Controllers">
       <object>objects\obj_button_controller</object>
       <object>objects\obj_scene_controller</object>
+    </objects>
+    <objects name="Debug ">
+      <object>objects\txt_info</object>
     </objects>
   </objects>
   <rooms name="rooms">

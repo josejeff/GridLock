@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,11 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initial
-player_1 = -1;
-player_2 = -1;
-map = -1;
+            <string>scene_controller = instance_find(obj_scene_controller,0);
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="72">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(x,y,"Map: ");
+draw_text(x + 50,y,scene_controller.map);
+draw_text(x,y+20,"Player 1: ");
+draw_text(x+100,y+20,scene_controller.player_1);
+draw_text(x,y+40,"Player 2: ");
+draw_text(x+100,y+40,scene_controller.player_2);
 </string>
           </argument>
         </arguments>

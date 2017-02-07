@@ -66,6 +66,7 @@
 if(selected)
 {
 scene_controller.map = id_tag;
+room_goto(rm_fight);
 }
 </string>
           </argument>
