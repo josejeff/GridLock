@@ -50,10 +50,12 @@
           <argument>
             <kind>1</kind>
             <string>draw_text(x,y,"Map: ");
-draw_text(x + 50,y,scene_controller.map);
-draw_text(x,y+20,"Player 1: ");
+draw_text(x+50,y,scene_controller.map);
+
+draw_text(x,y+20,"Player_1: ");
 draw_text(x+100,y+20,scene_controller.player_1);
-draw_text(x,y+40,"Player 2: ");
+
+draw_text(x,y+40,"Player_2: ");
 draw_text(x+100,y+40,scene_controller.player_2);
 </string>
           </argument>
