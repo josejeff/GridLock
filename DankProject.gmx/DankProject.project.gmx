@@ -31,6 +31,10 @@
         <sprite>sprites\spr_monk_char_selection</sprite>
         <sprite>sprites\spr_lily_icon</sprite>
       </sprites>
+      <sprites name="lily">
+        <sprite>sprites\spr_lily_idle</sprite>
+        <sprite>sprites\spr_lily_kick</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -56,8 +60,13 @@
         <object>objects\obj_map_parent</object>
       </objects>
       <objects name="Characters">
-        <object>objects\obj_character_mike</object>
-        <object>objects\obj_icon_lily</object>
+        <objects name="Icons">
+          <object>objects\obj_character_mike</object>
+          <object>objects\obj_icon_lily</object>
+        </objects>
+        <objects name="Lily">
+          <object>objects\obj_character_lily</object>
+        </objects>
       </objects>
       <object>objects\obj_one_vs_ai</object>
       <object>objects\obj_one_vs_one</object>
