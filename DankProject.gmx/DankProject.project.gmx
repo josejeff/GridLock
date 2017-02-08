@@ -15,16 +15,13 @@
     <sprites name="Buttons">
       <sprite>sprites\spr_one_vs_one</sprite>
       <sprite>sprites\spr_one_vs_ai</sprite>
-      <sprite>sprites\spr_button</sprite>
-      <sprite>sprites\spr_map_buttons</sprite>
       <sprite>sprites\spr_map_hanoi</sprite>
       <sprite>sprites\spr_character_mike</sprite>
     </sprites>
     <sprites name="Background Sprites">
       <sprite>sprites\mainScreen</sprite>
-      <sprite>sprites\sprite7</sprite>
     </sprites>
-    <sprites name="CharacterSpriteSheet">
+    <sprites name="Characters">
       <sprites name="CharacterSelectionSprites">
         <sprite>sprites\spr_samauri_char_selection</sprite>
         <sprite>sprites\spr_viking_char_selection</sprite>
