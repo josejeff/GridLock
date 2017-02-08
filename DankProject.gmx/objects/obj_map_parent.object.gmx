@@ -110,8 +110,8 @@ if(selected)
             <string>///Enter Function
 if(selected)
 {
-scene_controller.map = id_tag;
-show_debug_message(id_tag);
+    scene_controller.map = id_tag;
+    room_goto(rm_fight);
 }
 </string>
           </argument>
