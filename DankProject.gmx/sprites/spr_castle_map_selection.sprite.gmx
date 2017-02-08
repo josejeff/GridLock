@@ -20,6 +20,6 @@
   <width>450</width>
   <height>250</height>
   <frames>
-    <frame index="0">images\sprite_desert_map_selection_0.png</frame>
+    <frame index="0">images\spr_castle_map_selection_0.png</frame>
   </frames>
 </sprite>
