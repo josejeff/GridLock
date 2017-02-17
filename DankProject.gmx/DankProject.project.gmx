@@ -24,8 +24,8 @@
     <sprites name="Characters">
       <sprites name="CharacterSelectionSprites">
         <sprite>sprites\spr_samauri_char_selection</sprite>
-        <sprite>sprites\spr_viking_char_selection</sprite>
-        <sprite>sprites\spr_robot_char_selection</sprite>
+        <sprite>sprites\spr_viking_icon</sprite>
+        <sprite>sprites\spr_robot_icon</sprite>
         <sprite>sprites\spr_ninja_char_selection</sprite>
         <sprite>sprites\spr_knight_char_selection</sprite>
         <sprite>sprites\spr_monk_char_selection</sprite>
@@ -63,9 +63,14 @@
         <objects name="Icons">
           <object>objects\obj_character_mike</object>
           <object>objects\obj_icon_lily</object>
+          <object>objects\obj_icon_viking</object>
+          <object>objects\obj_icon_robot</object>
         </objects>
         <objects name="Lily">
           <object>objects\obj_character_lily</object>
+        </objects>
+        <objects name="Viking">
+          <object>objects\obj_character_viking</object>
         </objects>
       </objects>
       <object>objects\obj_one_vs_ai</object>
