@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_feral_fist</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="MapSelectionSprites">
       <sprite>sprites\spr_desert_map_selection</sprite>
@@ -22,7 +24,7 @@
       <sprite>sprites\mainScreen</sprite>
     </sprites>
     <sprites name="Characters">
-      <sprites name="CharacterSelectionSprites">
+      <sprites name="Character Icons">
         <sprite>sprites\spr_samauri_char_selection</sprite>
         <sprite>sprites\spr_viking_icon</sprite>
         <sprite>sprites\spr_robot_icon</sprite>
@@ -31,9 +33,12 @@
         <sprite>sprites\spr_monk_char_selection</sprite>
         <sprite>sprites\spr_lily_icon</sprite>
       </sprites>
-      <sprites name="lily">
-        <sprite>sprites\spr_lily_idle</sprite>
-        <sprite>sprites\spr_lily_kick</sprite>
+      <sprites name="Character Animations">
+        <sprites name="Lily">
+          <sprite>sprites\spr_lily_idle</sprite>
+          <sprite>sprites\spr_lily_kick</sprite>
+          <sprite>sprites\sprite18</sprite>
+        </sprites>
       </sprites>
     </sprites>
   </sprites>
@@ -45,47 +50,60 @@
     <script>scripts\scr_room_changer.gml</script>
   </scripts>
   <objects name="objects">
-    <objects name="Buttons">
-      <objects name="Parents">
-        <object>objects\obj_buttonY_parent</object>
-        <object>objects\obj_buttonX_parent</object>
-        <object>objects\obj_button_parent</object>
-        <object>objects\obj_character_parent</object>
-      </objects>
-      <objects name="Maps">
-        <object>objects\obj_map_desert</object>
-        <object>objects\obj_map_temple</object>
-        <object>objects\obj_map_waterfall</object>
-        <object>objects\obj_map_castle</object>
-        <object>objects\obj_map_parent</object>
-      </objects>
-      <objects name="Characters">
-        <objects name="Icons">
-          <object>objects\obj_character_mike</object>
-          <object>objects\obj_icon_lily</object>
-          <object>objects\obj_icon_viking</object>
-          <object>objects\obj_icon_robot</object>
+    <objects name="Menu Screens">
+      <objects name="Buttons">
+        <objects name="Parents">
+          <object>objects\obj_buttonY_parent</object>
+          <object>objects\obj_buttonX_parent</object>
+          <object>objects\obj_button_parent</object>
+          <object>objects\obj_character_parent</object>
         </objects>
-        <objects name="Lily">
-          <object>objects\obj_character_lily</object>
+        <objects name="Map Icons">
+          <object>objects\obj_map_desert</object>
+          <object>objects\obj_map_temple</object>
+          <object>objects\obj_map_waterfall</object>
+          <object>objects\obj_map_castle</object>
+          <object>objects\obj_map_parent</object>
         </objects>
-        <objects name="Viking">
-          <object>objects\obj_character_viking</object>
+        <objects name="Character Icons">
+          <objects name="Icons">
+            <object>objects\obj_character_mike</object>
+            <object>objects\obj_icon_lily</object>
+            <object>objects\obj_icon_viking</object>
+            <object>objects\obj_icon_robot</object>
+          </objects>
+        </objects>
+        <objects name="Menu">
+          <object>objects\obj_one_vs_one</object>
+          <object>objects\obj_one_vs_ai</object>
         </objects>
       </objects>
-      <object>objects\obj_one_vs_ai</object>
-      <object>objects\obj_one_vs_one</object>
+      <objects name="Controllers">
+        <object>objects\obj_button_controller</object>
+        <object>objects\obj_scene_controller</object>
+        <object>objects\obj_audio_controller</object>
+      </objects>
+      <objects name="Extra UI objects">
+        <object>objects\obj_character_selection_pane</object>
+        <object>objects\obj_map_selection_pane</object>
+      </objects>
+      <objects name="Debug">
+        <object>objects\txt_info</object>
+      </objects>
     </objects>
-    <objects name="Controllers">
-      <object>objects\obj_button_controller</object>
-      <object>objects\obj_scene_controller</object>
-    </objects>
-    <objects name="Extra UI objects">
-      <object>objects\obj_character_selection_pane</object>
-      <object>objects\obj_map_selection_pane</object>
-    </objects>
-    <objects name="Debug">
-      <object>objects\txt_info</object>
+    <objects name="Fight Scene">
+      <objects name="Lily">
+        <object>objects\obj_character_lily</object>
+      </objects>
+      <objects name="Viking">
+        <object>objects\obj_character_viking</object>
+      </objects>
+      <objects name="Controllers">
+        <object>objects\obj_ai_controller</object>
+        <object>objects\obj_player_controller</object>
+        <object>objects\obj_player_1</object>
+        <object>objects\obj_player_2</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
