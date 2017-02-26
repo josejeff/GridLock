@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>var snd = audio_play_sound(bgm_feral_fist,0,1);
+scene_controller = instance_find(obj_scene_controller,0);
+old_room = room;
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,19 +50,56 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room == rm_start_menu || room == rm_character_selection || room == rm_maps)
+            <string>if(room == rm_start_menu)
 {
-    if(!audio_is_playing(snd_feral_fist))
+    if(!audio_is_playing(bgm_main_menu))
     {
-        audio_play_sound(snd_feral_fist,100,1);
+    audio_stop_sound(bgm_feral_fist);
+    snd = audio_play_sound(bgm_main_menu,0,1);
     }
 }
-else
+if(room == rm_character_selection|| room == rm_maps)
 {
-    if(audio_is_playing(snd_feral_fist))
+    if(audio_is_playing(bgm_main_menu))
     {
-       audio_stop_sound(snd_feral_fist);
+        show_debug_message(audio_sound_length(bgm_main_menu)-audio_sound_get_track_position(snd));
+        if(audio_sound_length(bgm_main_menu)-audio_sound_get_track_position(snd)&lt; .10)
+        {
+            audio_stop_sound(bgm_main_menu);
+            snd = audio_play_sound(bgm_character_select,0,1);
+        }
     }
+    if(scene_controller.player_1 != -1)
+    {
+        if(audio_is_playing(bgm_character_select))
+        {
+            show_debug_message(audio_sound_length(bgm_character_select)-audio_sound_get_track_position(snd));
+            if(audio_sound_length(bgm_character_select)-audio_sound_get_track_position(snd)&lt; .10)
+            {   
+                audio_stop_sound(bgm_character_select);
+                snd = audio_play_sound(bgm_player1_selected,0,1);
+            }
+        }
+    }
+    if(scene_controller.player_2 != -1)
+    {
+        if(audio_is_playing(bgm_player1_selected))
+        {
+            show_debug_message(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd));
+            if(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd)&lt; .10)
+            {
+                audio_stop_sound(bgm_player1_selected);
+                snd = audio_play_sound(bgm_player2_selected,0,1);
+            }
+        }
+    }
+}
+if(room == rm_fight &amp;&amp; old_room != room)
+{
+    audio_stop_all();
+    old_room = room;
+    track = choose(bgm_vidarr,bgm_throwing_punches);
+    snd = audio_play_sound(track,0,1);
 }
 </string>
           </argument>

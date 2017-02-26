@@ -5,7 +5,13 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\snd_feral_fist</sound>
+    <sound>sound\bgm_feral_fist</sound>
+    <sound>sound\bgm_main_menu</sound>
+    <sound>sound\bgm_character_select</sound>
+    <sound>sound\bgm_player1_selected</sound>
+    <sound>sound\bgm_player2_selected</sound>
+    <sound>sound\bgm_vidarr</sound>
+    <sound>sound\bgm_throwing_punches</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="MapSelectionSprites">
@@ -76,6 +82,7 @@
         <objects name="Menu">
           <object>objects\obj_one_vs_one</object>
           <object>objects\obj_one_vs_ai</object>
+          <object>objects\obj_start_button</object>
         </objects>
       </objects>
       <objects name="Controllers">
@@ -107,6 +114,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start_screen</room>
     <room>rooms\rm_start_menu</room>
     <room>rooms\rm_character_selection</room>
     <room>rooms\rm_maps</room>
