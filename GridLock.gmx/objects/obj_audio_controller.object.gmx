@@ -85,7 +85,7 @@ if(room == rm_character_selection|| room == rm_maps)
     {
         if(audio_is_playing(bgm_player1_selected))
         {
-            show_debug_message(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd));
+        show_debug_message(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd));
             if(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd)&lt; .10)
             {
                 audio_stop_sound(bgm_player1_selected);

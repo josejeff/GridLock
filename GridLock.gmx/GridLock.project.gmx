@@ -42,8 +42,9 @@
       <sprites name="Character Animations">
         <sprites name="Lily">
           <sprite>sprites\spr_lily_idle</sprite>
-          <sprite>sprites\spr_lily_kick</sprite>
-          <sprite>sprites\sprite18</sprite>
+          <sprite>sprites\spr_lily_round_house</sprite>
+          <sprite>sprites\spr_lily_medium_kick</sprite>
+          <sprite>sprites\col_lily_medium_kick</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -101,6 +102,10 @@
     <objects name="Fight Scene">
       <objects name="Lily">
         <object>objects\obj_character_lily</object>
+        <object>objects\obj_enemy_lily</object>
+        <objects name="hitboxes">
+          <object>objects\obj_lily_medium_kick</object>
+        </objects>
       </objects>
       <objects name="Viking">
         <object>objects\obj_character_viking</object>

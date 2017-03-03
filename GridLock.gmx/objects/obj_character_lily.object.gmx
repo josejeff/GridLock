@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 1/60;
+player = 1;
+enemy = instance_find(obj_player_2,0);
+hit = 0;
+collided = 0;
 </string>
           </argument>
         </arguments>
@@ -48,13 +52,56 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message(sprite_get_number(spr_lily_kick));
+            <string>
 show_debug_message(image_index);
-if(sprite_index == spr_lily_kick &amp;&amp; image_index &gt; sprite_get_number(spr_lily_kick)-image_speed)
+if(sprite_index == spr_lily_medium_kick &amp;&amp; image_index &gt; sprite_get_number(spr_lily_medium_kick)-image_speed)
 {
     image_speed = 1/60;
     sprite_index = spr_lily_idle;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///hitbox logic
+
+if(sprite_index == spr_lily_medium_kick &amp;&amp; image_index &gt; 3 )
+{
+    with(instance_create(x,y,obj_lily_medium_kick))
+    {
+            if(collision_rectangle(x,y,x+sprite_width,y+sprite_height,obj_enemy_lily,0,0))
+            {
+                show_debug_message("COLLIDING");
+                if(other.hit == 1)
+                {
+                    other.hit = 0;
+                    other.enemy.health -= 20;
+                    if(other.enemy.health &lt; 0)
+                    {
+                      other.enemy.health = 0;
+                    }
+                    show_debug_message(other.enemy.health);
+                }
+            }
+    }
+}
+    
 </string>
           </argument>
         </arguments>
@@ -123,9 +170,9 @@ if(sprite_index == spr_lily_kick &amp;&amp; image_index &gt; sprite_get_number(s
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = spr_lily_kick;
-image_speed = 5/60;
-
+            <string>sprite_index = spr_lily_medium_kick;
+image_speed = 3/60;
+hit = 1;
 
 </string>
           </argument>
