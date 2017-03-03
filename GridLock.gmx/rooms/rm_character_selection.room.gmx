@@ -52,15 +52,14 @@
   </views>
   <instances>
     <instance objName="obj_button_controller" x="32" y="32" name="inst_96FEA4DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_character_selection_pane" x="192" y="160" name="inst_3FAC4734" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_character_selection_pane" x="192" y="192" name="inst_3FAC4734" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_character_selection_pane" x="768" y="160" name="inst_75F5A103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_scene_controller" x="64" y="32" name="inst_079CF498" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_icon_viking" x="64" y="384" name="inst_B32CE1C3" locked="0" code="" scaleX="5.80000019073486" scaleY="4.26666688919067" colour="4294967295" rotation="0"/>
     <instance objName="obj_icon_lily" x="224" y="416" name="inst_FEB48633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icon_lily" x="384" y="416" name="inst_788A82CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icon_lily" x="544" y="416" name="inst_43A1FAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icon_lily" x="704" y="416" name="inst_0FBA68A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icon_lily" x="864" y="416" name="inst_396F6135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_icon_viking" x="64" y="384" name="inst_B32CE1C3" locked="0" code="" scaleX="5.80000019073486" scaleY="4.26666688919067" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
