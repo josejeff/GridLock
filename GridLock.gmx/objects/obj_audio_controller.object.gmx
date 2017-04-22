@@ -62,7 +62,7 @@ if(room == rm_character_selection|| room == rm_maps)
 {
     if(audio_is_playing(bgm_main_menu))
     {
-        show_debug_message(audio_sound_length(bgm_main_menu)-audio_sound_get_track_position(snd));
+        //show_debug_message(audio_sound_length(bgm_main_menu)-audio_sound_get_track_position(snd));
         if(audio_sound_length(bgm_main_menu)-audio_sound_get_track_position(snd)&lt; .10)
         {
             audio_stop_sound(bgm_main_menu);
@@ -73,7 +73,7 @@ if(room == rm_character_selection|| room == rm_maps)
     {
         if(audio_is_playing(bgm_character_select))
         {
-            show_debug_message(audio_sound_length(bgm_character_select)-audio_sound_get_track_position(snd));
+            //show_debug_message(audio_sound_length(bgm_character_select)-audio_sound_get_track_position(snd));
             if(audio_sound_length(bgm_character_select)-audio_sound_get_track_position(snd)&lt; .10)
             {   
                 audio_stop_sound(bgm_character_select);
@@ -85,7 +85,7 @@ if(room == rm_character_selection|| room == rm_maps)
     {
         if(audio_is_playing(bgm_player1_selected))
         {
-        show_debug_message(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd));
+        //show_debug_message(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd));
             if(audio_sound_length(bgm_player1_selected)-audio_sound_get_track_position(snd)&lt; .10)
             {
                 audio_stop_sound(bgm_player1_selected);

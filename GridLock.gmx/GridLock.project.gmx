@@ -43,6 +43,7 @@
         <sprites name="Lily">
           <sprite>sprites\spr_lily_idle</sprite>
           <sprite>sprites\spr_lily_round_house</sprite>
+          <sprite>sprites\col_lily_round_house</sprite>
           <sprite>sprites\spr_lily_medium_kick</sprite>
           <sprite>sprites\col_lily_medium_kick</sprite>
         </sprites>
@@ -51,6 +52,10 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_0</background>
+    <background>background\bg_desert</background>
+    <background>background\bg_temple</background>
+    <background>background\bg_waterfall</background>
+    <background>background\bg_castle</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -104,6 +109,7 @@
         <object>objects\obj_character_lily</object>
         <object>objects\obj_enemy_lily</object>
         <objects name="hitboxes">
+          <object>objects\obj_lily_round_house</object>
           <object>objects\obj_lily_medium_kick</object>
         </objects>
       </objects>

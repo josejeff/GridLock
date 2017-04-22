@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 1/60;
 player = instance_find(obj_player_2,0);
+
 </string>
           </argument>
         </arguments>

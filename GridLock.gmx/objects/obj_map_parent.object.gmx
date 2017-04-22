@@ -111,6 +111,22 @@ if(selected)
 if(selected)
 {
     scene_controller.map = id_tag;
+    if(map_selection_pane.sprite_index == spr_desert_map_selection)
+    {
+    global.chosenMap = 0;
+    }
+    else if(map_selection_pane.sprite_index == spr_temple_map_selection)
+    {
+    global.chosenMap = 1;
+    }
+    else if(map_selection_pane.sprite_index == spr_waterfall_map_selection)
+    {
+    global.chosenMap = 2;
+    }
+    else
+    {
+    global.chosenMap = 3;
+    }
     room_goto(rm_fight);
 }
 </string>
