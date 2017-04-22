@@ -41,6 +41,7 @@
             <kind>1</kind>
             <string>///Map
 map_sprite_image = spr_desert_map_selection;
+
 </string>
           </argument>
         </arguments>

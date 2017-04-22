@@ -63,7 +63,40 @@ global.player2 = player;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//character view enemy
+            <string>// left
+if ((keyboard_check(vk_left))  &amp;&amp; (global.player1.attacking == false))
+{
+    global.player2.x -= 5;
+}
+
+// right
+if ((keyboard_check(vk_right))  &amp;&amp; (global.player1.attacking == false))
+{
+   global.player2.x += 5;
+}
+
+// player2 punch
+if ((keyboard_check(ord('U'))) &amp;&amp; (global.player2.attacking == false))
+{
+    global.player2.attacking = true;
+    global.player2.sprite_index = global.player2.punchAnimation;
+    global.player2.image_speed = global.player2.attackSpeed;
+    var punchbox = instance_create(global.player2.x,global.player2.y,global.player2.punchHitbox);
+    punchbox.image_xscale = global.player2.image_xscale;    
+    global.player2.hit = 1;   
+}
+
+// player1 kick
+if ((keyboard_check(ord('I'))) &amp;&amp; (global.player2.attacking == false))
+{
+    global.player2.attacking = true;
+    global.player2.sprite_index = global.player2.kickAnimation;
+    global.player2.image_speed = global.player2.attackSpeed;
+    var hitbox = instance_create(global.player2.x,global.player2.y,global.player2.kickHitbox);
+    hitbox.image_xscale = global.player2.image_xscale;    
+    global.player2.hit = 1;
+}
+//character view enemy
 if(global.player2.x &lt; global.player1.x)
 {
     global.player2.image_xscale = 1;
