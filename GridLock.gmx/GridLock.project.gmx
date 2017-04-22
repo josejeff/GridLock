@@ -49,6 +49,9 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="Tiles">
+      <sprite>sprites\spr_tile</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_0</background>
@@ -123,7 +126,9 @@
         <object>objects\obj_player_2</object>
       </objects>
     </objects>
+    <object>objects\obj_tile</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
     <room>rooms\rm_start_menu</room>

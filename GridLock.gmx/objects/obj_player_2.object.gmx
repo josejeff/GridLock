@@ -64,13 +64,13 @@ global.player2 = player;
           <argument>
             <kind>1</kind>
             <string>// left
-if ((keyboard_check(vk_left))  &amp;&amp; (global.player1.attacking == false))
+if ((keyboard_check(vk_left))  &amp;&amp; (global.player2.attacking == false))
 {
     global.player2.x -= 5;
 }
 
 // right
-if ((keyboard_check(vk_right))  &amp;&amp; (global.player1.attacking == false))
+if ((keyboard_check(vk_right))  &amp;&amp; (global.player2.attacking == false))
 {
    global.player2.x += 5;
 }
