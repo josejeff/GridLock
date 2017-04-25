@@ -125,10 +125,10 @@
         <object>objects\obj_player_1</object>
         <object>objects\obj_player_2</object>
       </objects>
+      <object>objects\obj_camera</object>
     </objects>
     <object>objects\obj_tile</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
     <room>rooms\rm_start_menu</room>

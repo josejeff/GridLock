@@ -5,24 +5,10 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_player_controller</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>604</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_inherited</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -39,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var player = instance_create(x,y,obj_character_lily);
-global.player1 = player;
-
-
+            <string>minimumScreenSize = 550;
 
 </string>
           </argument>
@@ -66,50 +49,20 @@ global.player1 = player;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// left
-if ((keyboard_check(ord('A')))  &amp;&amp; (global.player1.attacking == false) &amp;&amp; (global.player1.x &gt; 50))
-{
-    global.player1.x -= 5;
-}
+            <string>x = (global.player1.x +global.player2.x)/2;
+y = (global.player1.y +global.player2.y)/2;
 
-// right
-if ((keyboard_check(ord('D')))  &amp;&amp; (global.player1.attacking == false) &amp;&amp; (global.player1.x &lt; 974))
+if(abs(global.player1.x - global.player2.x) &lt; minimumScreenSize)
 {
-   global.player1.x += 5;
-}
-
-// player1 punch
-if ((keyboard_check(ord('J'))) &amp;&amp; (global.player1.attacking == false))
-{
-    global.player1.attacking = true;
-    global.player1.sprite_index = global.player1.punchAnimation;
-    global.player1.image_speed = global.player1.attackSpeed;
-    var punchbox = instance_create(global.player1.x,global.player1.y,global.player1.punchHitbox);
-    punchbox.image_xscale = global.player1.image_xscale;    
-    global.player1.hit = 1;   
-}
-
-// player1 kick
-if ((keyboard_check(ord('K'))) &amp;&amp; (global.player1.attacking == false))
-{
-    global.player1.attacking = true;
-    global.player1.sprite_index = global.player1.kickAnimation;
-    global.player1.image_speed = global.player1.attackSpeed;
-    var hitbox = instance_create(global.player1.x,global.player1.y,global.player1.kickHitbox);
-    hitbox.image_xscale = global.player1.image_xscale;    
-    global.player1.hit = 1;
-}
-
-
-// character view enemy
-if(global.player1.x &lt; global.player2.x)
-{
-    global.player1.image_xscale = 1;
+        view_wview[0] = minimumScreenSize + 50;
+        view_hview[0] = minimumScreenSize -200;
 }
 else
 {
-    global.player1.image_xscale = -1;
+        view_wview[0] = abs(global.player1.x - global.player2.x) + 50;
+        view_hview[0] = abs(global.player1.x - global.player2.x) - 200;
 }
+
 
 </string>
           </argument>
