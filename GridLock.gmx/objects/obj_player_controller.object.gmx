@@ -65,11 +65,11 @@ energy = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_red);
+            <string>/*draw_set_color(c_red);
 draw_rectangle(x,room_height/20,x+100*2,room_height/20+20,0);
 draw_set_color(c_green);
 draw_rectangle(x,room_height/20,x+health*2,room_height/20+20,0);
-
+*/
 
 </string>
           </argument>

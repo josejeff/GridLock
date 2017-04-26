@@ -52,6 +52,7 @@
     <sprites name="Tiles">
       <sprite>sprites\spr_tile</sprite>
     </sprites>
+    <sprite>sprites\spr_hitbox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_0</background>
@@ -112,7 +113,8 @@
         <object>objects\obj_character_lily</object>
         <object>objects\obj_enemy_lily</object>
         <objects name="hitboxes">
-          <object>objects\obj_lily_round_house</object>
+          <object>objects\obj_hitbox</object>
+          <object>objects\obj_lily_roundhouse</object>
           <object>objects\obj_lily_medium_kick</object>
         </objects>
       </objects>
@@ -126,6 +128,7 @@
         <object>objects\obj_player_2</object>
       </objects>
       <object>objects\obj_camera</object>
+      <object>objects\obj_character</object>
     </objects>
     <object>objects\obj_tile</object>
   </objects>
