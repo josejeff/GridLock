@@ -50,9 +50,10 @@
         <sprites name="Fighter">
           <sprites name="hitboxes">
             <sprite>sprites\fighter_hitbox_upper_punch</sprite>
+            <sprite>sprites\fighter_hitbox_down_punch</sprite>
             <sprite>sprites\fighter_hitbox_walk_forward</sprite>
-            <sprite>sprites\fighter_hitbox_neutral_punch</sprite>
             <sprite>sprites\fighter_hitbox_side_punch</sprite>
+            <sprite>sprites\fighter_hitbox_neutral_punch</sprite>
             <sprite>sprites\fighter_hitbox_idle</sprite>
           </sprites>
           <sprites name="sprites">
@@ -61,6 +62,7 @@
             <sprite>sprites\fighter_spr_walk_forward</sprite>
             <sprite>sprites\fighter_spr_neutral_punch</sprite>
             <sprite>sprites\fighter_spr_upper_punch</sprite>
+            <sprite>sprites\fighter_spr_down_punch</sprite>
           </sprites>
         </sprites>
       </sprites>
@@ -145,6 +147,20 @@
       </objects>
       <object>objects\obj_camera</object>
       <object>objects\obj_character</object>
+      <objects name="Fighter">
+        <objects name="hitboxes">
+          <object>objects\obj_fighter_hitbox_upper_punch</object>
+          <object>objects\obj_fighter_hitbox_neutral_punch</object>
+          <object>objects\obj_fighter_hitbox_down_punch</object>
+        </objects>
+        <objects name="objects">
+          <object>objects\obj_fighter_idle</object>
+          <object>objects\obj_fighter_neutral_punch</object>
+          <object>objects\obj_fighter_side_punch</object>
+          <object>objects\obj_fighter_down_punch</object>
+          <object>objects\obj_fighter_walk_forward</object>
+        </objects>
+      </objects>
     </objects>
     <object>objects\obj_tile</object>
   </objects>
