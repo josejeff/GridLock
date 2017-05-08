@@ -77,6 +77,13 @@ if ((keyboard_check(vk_right))  &amp;&amp; (global.player2.attacking == false) &
    global.player2.x += 5;
 }
 
+// up
+/*
+if ((keyboard_check(vk_up))  &amp;&amp; (global.player2.attacking == false) &amp;&amp; (global.player2.jumping == false))
+{
+   global.player2.jumping = true;
+}
+*/
 // player2 punch
 if ((keyboard_check(ord('U'))) &amp;&amp; (global.player2.attacking == false))
 {

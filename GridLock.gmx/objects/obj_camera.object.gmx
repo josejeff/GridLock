@@ -32,6 +32,30 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(rm_start_screen);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -63,7 +87,46 @@ else
         view_hview[0] = abs(global.player1.x - global.player2.x) - 200;
 }
 
+if(obj_player_1.healthy &lt;= 0 || obj_player_2.healthy &lt;= 0)
+{
+room_instance_clear(rm_start_screen);
+room_instance_clear(rm_start_menu);
+room_instance_clear(rm_character_selection);
+room_instance_clear(rm_maps);
+room_instance_clear(rm_fight);
+room_goto(rm_start_screen);
+}
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(obj_player_1.healthy &lt;= 0)
+{
+    draw_text_transformed_colour((room_width / 2) - 100, (room_height / 2) - 50, 'Player 2 Wins', 2, 2, image_angle, c_blue, c_blue, c_white, c_white, 1);
+}
+if(obj_player_2.healthy &lt;= 0)
+{
+    draw_text_transformed_colour((room_width / 2) - 100, (room_height / 2) - 50, 'Player 1 Wins', 2, 2, image_angle, c_red, c_red, c_black, c_black, 1);
+}
 </string>
           </argument>
         </arguments>
