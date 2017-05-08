@@ -49,11 +49,11 @@
         </sprites>
         <sprites name="Fighter">
           <sprites name="hitboxes">
-            <sprite>sprites\fighter_col_neutral_punch</sprite>
-            <sprite>sprites\fighter_col_upper_punch</sprite>
-            <sprite>sprites\fighter_col_side_punch</sprite>
-            <sprite>sprites\fighter_col_walk_forward</sprite>
-            <sprite>sprites\fighter_col_idle</sprite>
+            <sprite>sprites\fighter_hitbox_upper_punch</sprite>
+            <sprite>sprites\fighter_hitbox_walk_forward</sprite>
+            <sprite>sprites\fighter_hitbox_neutral_punch</sprite>
+            <sprite>sprites\fighter_hitbox_side_punch</sprite>
+            <sprite>sprites\fighter_hitbox_idle</sprite>
           </sprites>
           <sprites name="sprites">
             <sprite>sprites\fighter_spr_idle</sprite>
@@ -61,13 +61,6 @@
             <sprite>sprites\fighter_spr_walk_forward</sprite>
             <sprite>sprites\fighter_spr_neutral_punch</sprite>
             <sprite>sprites\fighter_spr_upper_punch</sprite>
-          </sprites>
-          <sprites name="damage">
-            <sprite>sprites\fighter_damage_neutral_punch</sprite>
-            <sprite>sprites\fighter_damage_idle</sprite>
-            <sprite>sprites\fighter_damage_walk_forward</sprite>
-            <sprite>sprites\fighter_damage_upper_punch</sprite>
-            <sprite>sprites\fighter_damage_side_punch</sprite>
           </sprites>
         </sprites>
       </sprites>
