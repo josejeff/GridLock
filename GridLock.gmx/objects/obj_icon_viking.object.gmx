@@ -47,6 +47,7 @@
         character_controller.image_speed = 0.2;
         character_controller.image_xscale = 5;
         character_controller.image_yscale = 5;
+        global.player1Chosen = obj_character_Alani;
     }
     if(scene_controller.player_2 == id_tag)
     {
@@ -54,6 +55,7 @@
         character_controller_2.image_speed = 0.2;   
         character_controller_2.image_xscale = -5;
         character_controller_2.image_yscale = 5;
+        global.player2Chosen = obj_character_Alani;
     }
 
 if(selected)
