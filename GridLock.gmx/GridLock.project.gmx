@@ -50,9 +50,9 @@
         <sprites name="Fighter">
           <sprites name="hitboxes">
             <sprite>sprites\fighter_hitbox_upper_punch</sprite>
+            <sprite>sprites\fighter_hitbox_walk_forward</sprite>
             <sprite>sprites\fighter_hitbox_neutral_punch</sprite>
             <sprite>sprites\fighter_hitbox_side_punch</sprite>
-            <sprite>sprites\fighter_hitbox_walk_forward</sprite>
             <sprite>sprites\fighter_hitbox_idle</sprite>
           </sprites>
           <sprites name="sprites">
