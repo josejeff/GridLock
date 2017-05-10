@@ -63,7 +63,7 @@
             <sprite>sprites\fighter_spr_upper_punch</sprite>
           </sprites>
           <sprites name="damage">
-            <sprite>sprites\fighter_damage_neutral_punch</sprite>
+            <sprite>sprites\fight_damage_neutral_punch</sprite>
             <sprite>sprites\fighter_damage_idle</sprite>
             <sprite>sprites\fighter_damage_walk_forward</sprite>
             <sprite>sprites\fighter_damage_upper_punch</sprite>
