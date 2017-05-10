@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -39,11 +39,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var player = instance_create(x,y,obj_character_lily);
+            <string>var player = instance_create(x,y,global.player1Chosen);
 player.creator = id;
 global.player1 = player;
 healthy = 100;
-
 </string>
           </argument>
         </arguments>
