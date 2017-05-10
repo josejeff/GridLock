@@ -45,11 +45,13 @@
     {
         character_controller.sprite_index = spr_lily_icon;
         character_controller.image_index = 1;
+        global.player1Chosen = obj_character_lily;
     }
     if(scene_controller.player_2 == id_tag)
     {
         character_controller_2.sprite_index = spr_lily_icon;
         character_controller_2.image_index = 1;
+        global.player2Chosen = obj_character_lily;
     }
 
 if(selected)
