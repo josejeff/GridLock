@@ -132,13 +132,16 @@
       </objects>
     </objects>
     <objects name="Fight Scene">
-      <objects name="Lily">
+      <objects name="Characters">
         <object>objects\obj_character_lily</object>
-        <object>objects\obj_enemy_lily</object>
-        <objects name="hitboxes">
-          <object>objects\obj_hitbox</object>
+        <objects name="lily_hitboxes">
           <object>objects\obj_lily_roundhouse</object>
           <object>objects\obj_lily_medium_kick</object>
+        </objects>
+        <object>objects\obj_character_Alani</object>
+        <objects name="Alani_hitbox">
+          <object>objects\obj_alani_neutralPunch</object>
+          <object>objects\obj_alani_upperCut</object>
         </objects>
       </objects>
       <objects name="Viking">
@@ -149,11 +152,12 @@
         <object>objects\obj_player_controller</object>
         <object>objects\obj_player_1</object>
         <object>objects\obj_player_2</object>
+        <object>objects\obj_camera</object>
+        <object>objects\obj_character</object>
+        <object>objects\obj_hitbox</object>
       </objects>
-      <object>objects\obj_camera</object>
-      <object>objects\obj_character</object>
+      <object>objects\obj_tile</object>
     </objects>
-    <object>objects\obj_tile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_screen</room>
