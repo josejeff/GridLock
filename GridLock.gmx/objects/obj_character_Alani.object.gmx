@@ -27,7 +27,13 @@
             <kind>1</kind>
             <string>image_speed = 1/60;
 health = 100;
-punchAnimation = fighter_spr_neutral_punch;
+
+neutral_a_animation = fighter_spr_neutral_punch;
+side_a_animation = fighter_spr_side_punch;
+down_a_animation = fighter_spr_down_punch;
+walk_forward_animation = fighter_spr_walk_forward;
+up_a_animation = fighter_spr_upper_punch;
+
 kickAnimation = fighter_spr_upper_punch;
 attackSpeed = 3/60;
 attacking = false;
